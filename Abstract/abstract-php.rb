@@ -53,7 +53,8 @@ class AbstractPhp < Formula
     end
 
     #argon for 7.2
-    depends_on "argon2" => :optional if build.include?("with-argon2") && name.split("::")[2].downcase.start_with?("php72")
+    depends_on "argon2" => :optional if build.include?("with-argon2")
+
 
 
     deprecated_option "with-pgsql" => "with-postgresql"
