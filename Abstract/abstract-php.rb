@@ -250,7 +250,7 @@ INFO
     end
 
     # Build with argon2 support (Password Hashing API)
-    if build.with?("libargon")
+    if build.with?("argon2")
       args << "--with-password-argon2=#{Formula["argon2"].opt_prefix}"
     end
 
